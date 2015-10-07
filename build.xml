@@ -18,6 +18,10 @@
         </jar>
     </target>
 
+    <target name="all" depends="clean,compile,jar"
+          description="Clean work dirs, then compile and create a JAR"/>
+    
+	
     <target name="run">
         <java jar="build/jar/HelloWorld.jar" fork="true"/>
     </target>
